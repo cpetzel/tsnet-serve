@@ -1,4 +1,4 @@
-FROM golang:1.20.2-alpine3.17 AS builder
+FROM golang:1.22.3-alpine3.19 AS builder
 RUN apk update && apk add --no-cache git
 WORKDIR $GOPATH/src/tsnet-serve/
 COPY go.mod go.sum ./
